@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criptografia Futurista</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>CryptoNuma</h1>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#criptografia">Criptografia</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="section-container">
+            <h2>Bem-vindo ao Futuro da Criptografia</h2>
+            <p>Explore nossa ferramenta de criptografia avançada baseada na cifra de César.</p>
+        </section>
+
+        <section id="criptografia" class="section-container">
+            <h2>Criptografia Futurista</h2>
+            <div class="painel">
+                <textarea id="inputText" placeholder="Digite o texto aqui..."></textarea>
+                <div class="slider-container">
+                    <label for="deslocamento">Deslocamento: <span id="valorDeslocamento">3</span></label>
+                    <input type="range" id="deslocamento" min="1" max="25" value="3" oninput="atualizarDeslocamento()">
+                </div>
+                <div class="botoes">
+                    <button onclick="criptografar()">Criptografar</button>
+                    <button onclick="descriptografar()">Descriptografar</button>
+                    <button onclick="limpar()">Limpar</button>
+                </div>
+                <textarea id="outputText" placeholder="Resultado..." readonly></textarea>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 CryptoNuma</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
